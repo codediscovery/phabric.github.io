@@ -1,0 +1,29 @@
+.sidebar {
+  border-right: 1px solid #3c3c3c;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  &__link {
+    display: block;
+    color: #acacae;
+    padding: 15px 0 15px 20px;
+    border-left: 4px solid transparent;
+    font-weight: 600;
+    &.active{
+        color: #ffffff;
+        border-left: 4px solid #40C4AD;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
